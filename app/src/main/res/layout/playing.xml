@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:hint="A Nice Day !! "
+        android:textSize="25dp"
+        android:id="@+id/playing_recordFile_name_tv"/>
+    <SeekBar
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playing_seekbar"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:paddingLeft="20dp"
+        android:layout_width="0dp"
+        android:hint="00:00:00"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:id="@+id/playing_start_time_tv"/>
+    <TextView
+        android:hint="01:00"
+        android:paddingRight="20dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:id="@+id/playing_end_time_tv"/>
+</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/playing_imageBtn"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/start" />
+</LinearLayout>

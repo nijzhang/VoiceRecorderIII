@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:paddingRight="1dp"
+        android:layout_width="219dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="66dp"
+            android:layout_height="match_parent">
+
+            <com.jiahuan.timelyanimation.NumberSwitchView
+                android:id="@+id/numberswitchH1"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                app:ta_number_bg_color="#ffffff" />
+
+            <com.jiahuan.timelyanimation.NumberSwitchView
+                android:id="@+id/numberswitchH0"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                app:ta_number_bg_color="#ffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="67dp"
+            android:layout_height="match_parent">
+
+            <com.jiahuan.timelyanimation.NumberSwitchView
+                android:id="@+id/numberswitchM1"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                app:ta_number_bg_color="#ffffff" />
+
+            <com.jiahuan.timelyanimation.NumberSwitchView
+                android:id="@+id/numberswitchM0"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                app:ta_number_bg_color="#ffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.jiahuan.timelyanimation.NumberSwitchView
+                android:id="@+id/numberswitchS1"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                app:ta_number_bg_color="#ffffff" />
+
+            <com.jiahuan.timelyanimation.NumberSwitchView
+                android:id="@+id/numberswitchS0"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                app:ta_number_bg_color="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="382dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rb_color="#0099CC"
+            app:rb_duration="3000"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="6">
+
+            <ImageButton
+                android:id="@+id/start"
+                android:layout_width="74dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="152dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="156dp"
+                android:layout_marginBottom="47dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/start00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </com.skyfishjy.library.RippleBackground>
+
+        <ImageButton
+            android:id="@+id/folder_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#ffffff"
+            android:scaleType="fitXY"
+            android:src="@drawable/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
